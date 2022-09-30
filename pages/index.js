@@ -75,7 +75,7 @@ export default function Home() {
           <img
             src="https://s3.us-east-2.amazonaws.com/dexter.io/satisfied-teenage-girl-with-piece-pizza.webp"
             alt=""
-            className='h-full w-full object-cover'
+            className='h-full w-full object-right object-cover'
           />
           </div>
 
@@ -118,7 +118,7 @@ export default function Home() {
             <img
               className="relative mx-auto"
               width={490}
-              src="https://tailwindui.com/img/features/feature-example-1.png"
+              src="https://s3.us-east-2.amazonaws.com/dexter.io/interview-mockup.png"
               alt=""
             />
           </div>
@@ -128,10 +128,10 @@ export default function Home() {
           <img
             src="https://s3.us-east-2.amazonaws.com/dexter.io/woman-eating-sandwich.webp"
             alt=""
-            className='h-full w-full object-cover'
+            className='h-full w-full object-left object-cover'
           />
           </div>
-        <div className='mt-12 sm:mt-16 lg:mt-24 text-center'>
+        <div className='mt-12 sm:mt-16 lg:mt-24 text-center bg'>
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           <span className="block">Ready to dive in?</span>
           <span className="block">Start your free trial today.</span>
