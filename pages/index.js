@@ -123,25 +123,34 @@ export default function Home() {
             />
           </div>
         </div>
-
-        <div className='circle absolute right-full hidden translate-x-1/2 translate-y-12 transform lg:block'>
-          <img
-            src="https://s3.us-east-2.amazonaws.com/dexter.io/woman-eating-sandwich.webp"
-            alt=""
-            className='h-full w-full object-left object-cover'
-          />
-          </div>
-        <div className='mt-12 sm:mt-16 lg:mt-24 text-center bg'>
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block">Ready to dive in?</span>
-          <span className="block">Start your free trial today.</span>
-        </h2>
-
-        <Scheduler />
-
-      </div>
-        
-      </div>
     </div>
+
+    <div className='relative mx-auto max-w-full'>
+    <img
+                  className=" bg-repeat opacity-25 xl:absolute xl:inset-0"
+                  src="https://s3.us-east-2.amazonaws.com/dexter.io/interview-food-illustrations.webp"
+                  alt="Food App User Research"
+                />
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-x-0 top-0 h-32 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
+                />
+      
+    <div className='circle absolute right-full hidden translate-x-1/2 translate-y-12 transform lg:block'>
+              <img
+                src="https://s3.us-east-2.amazonaws.com/dexter.io/woman-eating-sandwich.webp"
+                alt=""
+                className='h-full w-full object-left object-cover'
+              />
+              </div>
+            <div className='mt-12 sm:mt-16 lg:mt-24 text-center bg'>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <span className="block">Ready to dive in?</span>
+              <span className="block">Start your free trial today.</span>
+            </h2>
+            <Scheduler />
+          </div>
+</div>
+</div>
   )
 }
