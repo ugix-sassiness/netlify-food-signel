@@ -30,42 +30,27 @@ const Scheduler = () => {
 const transferFeatures = [
   {
     id: 1,
-    name: 'Competitive exchange rates',
+    name: 'Looking for safe places to eat?',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: GlobeAltIcon,
   },
   {
     id: 2,
-    name: 'No hidden fees',
+    name: 'Food Allergies',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: ScaleIcon,
   },
   {
     id: 3,
-    name: 'Transfers are instant',
+    name: 'Food Hypersensitivities',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: BoltIcon,
   },
 ]
-const communicationFeatures = [
-  {
-    id: 1,
-    name: 'Mobile notifications',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ChatBubbleBottomCenterTextIcon,
-  },
-  {
-    id: 2,
-    name: 'Reminder emails',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: EnvelopeIcon,
-  },
-]
+
 
 export default function Home() {
   return (
@@ -80,29 +65,27 @@ export default function Home() {
           </div>
 
         <div className="relative">
-          <h2 className="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-            A better way to send money
+        <h2 className="text-center text-lg font-semibold text-yellow-700 mb-3">Research Study</h2>
+          <h2 className="text-center text-4xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+            Volunteers Needed! 
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in,
-            accusamus quisquam.
+           We are conducting user research aimed at improving outcomes for and quality of life for people with food allergies.
           </p>
         </div>
 
         <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
           <div className="relative">
-            <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Transfer funds world-wide</h3>
+            <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">We want to hear from you</h3>
             <p className="mt-3 text-lg text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-              officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-              Totam, velit.
+              Do you have difficulties finding the right kind of foods to eat?
             </p>
 
             <dl className="mt-10 space-y-10">
               {transferFeatures.map((item) => (
                 <div key={item.id} className="relative">
                   <dt>
-                    <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                    <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-stone-600 text-white">
                       <item.icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
@@ -127,7 +110,7 @@ export default function Home() {
 
     <div className='relative mx-auto max-w-full'>
     <img
-                  className=" bg-repeat opacity-25 xl:absolute xl:inset-0"
+                  className="bg-repeat opacity-10 xl:absolute xl:inset-0"
                   src="https://s3.us-east-2.amazonaws.com/dexter.io/interview-food-illustrations.webp"
                   alt="Food App User Research"
                 />
@@ -136,7 +119,7 @@ export default function Home() {
                   className="absolute inset-x-0 top-0 h-32 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
                 />
       
-    <div className='circle absolute right-full hidden translate-x-1/2 translate-y-12 transform lg:block'>
+    <div className='circle absolute right-full hidden translate-x-full translate-y-12 transform lg:block'>
               <img
                 src="https://s3.us-east-2.amazonaws.com/dexter.io/woman-eating-sandwich.webp"
                 alt=""
@@ -145,8 +128,8 @@ export default function Home() {
               </div>
             <div className='mt-12 sm:mt-16 lg:mt-24 text-center bg'>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              <span className="block">Ready to dive in?</span>
-              <span className="block">Start your free trial today.</span>
+              <span className="block">Your voice matters</span>
+              <span className="block">We want to hear from you!</span>
             </h2>
             <Scheduler />
           </div>
