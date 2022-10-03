@@ -1,9 +1,5 @@
 import {
-  BoltIcon,
   ChatBubbleBottomCenterTextIcon,
-  EnvelopeIcon,
-  GlobeAltIcon,
-  ScaleIcon,
 } from '@heroicons/react/24/outline'
 import { InlineWidget } from 'react-calendly'
 
@@ -32,22 +28,22 @@ const transferFeatures = [
     id: 1,
     name: 'Looking for safe places to eat?',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: GlobeAltIcon,
+      'Have difficulties making last-minute dinner plans or finding safe options for places to order take-out to prevent an allergic reaction.',
+    icon: ChatBubbleBottomCenterTextIcon,
   },
   {
     id: 2,
-    name: 'Food Allergies',
+    name: 'Avoiding reactions outside of home?',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ScaleIcon,
+      'Have to bring your own food to prevent exposure to foods that are now off-limits but hard to avoid.',
+    icon: ChatBubbleBottomCenterTextIcon,
   },
   {
     id: 3,
-    name: 'Food Hypersensitivities',
+    name: 'Changing food orders to fit your food allergy dietary needs?',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: BoltIcon,
+      'Altering your order to minimize mix-ups to avoid feeling left out of the dining-out experience.',
+    icon: ChatBubbleBottomCenterTextIcon,
   },
 ]
 
@@ -65,12 +61,12 @@ export default function Home() {
           </div>
 
         <div className="relative">
-        <h2 className="text-center text-lg font-semibold text-yellow-700 mb-3">Research Study</h2>
+        <h2 className="text-center text-lg font-semibold text-yellow-700 mb-3">October 3rd - 11th Event</h2>
           <h2 className="text-center text-4xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
             Volunteers Needed! 
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-500">
-           We are conducting user research aimed at improving outcomes for and quality of life for people with food allergies.
+          We are exploring the challenges and opportunities to support people with food allergies and sensitivities to find safe places to eat out and improve their dining experiences.
           </p>
         </div>
 
@@ -108,32 +104,51 @@ export default function Home() {
         </div>
     </div>
 
-    <div className='relative mx-auto max-w-full'>
-    <img
-                  className="bg-repeat opacity-10 xl:absolute xl:inset-0"
+    {/* START */}
+
+ {/* Stats section */}
+ <div className="relative bg-gray-50 sm:bg-stone-800">
+          <div className="absolute inset-x-0 bottom-0 h-80 xl:top-0 xl:h-full">
+            <div className="h-full w-full xl:grid xl:grid-cols-2">
+              
+              <div className='circle absolute right-full hidden translate-x-full translate-y-12 transform lg:block'>
+                
+                  <img
+                    src="https://s3.us-east-2.amazonaws.com/dexter.io/woman-eating-sandwich.webp"
+                    alt=""
+                    className='h-full w-full object-left object-cover'
+                  />
+              </div>
+              
+              <div className="h-screen xl:relative xl:col-start-2">
+                <img
+                  className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
                   src="https://s3.us-east-2.amazonaws.com/dexter.io/interview-food-illustrations.webp"
                   alt="Food App User Research"
                 />
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-x-0 top-0 h-32 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
-                />
-      
-    <div className='circle absolute right-full hidden translate-x-full translate-y-12 transform lg:block'>
-              <img
-                src="https://s3.us-east-2.amazonaws.com/dexter.io/woman-eating-sandwich.webp"
-                alt=""
-                className='h-full w-full object-left object-cover'
-              />
               </div>
-            <div className='mt-12 sm:mt-16 lg:mt-24 text-center bg'>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              <span className="block">Your voice matters</span>
-              <span className="block">We want to hear from you!</span>
+            </div>
+          </div>
+          {/* <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-flow-col-dense xl:grid-cols-2 xl:gap-x-8"> */}
+          {/* <div className='pt-12 pb-64 sm:pt-24 sm:pb-64 xl:pb-24 text-center'> */}
+          <div className='pt-12 sm:pt-24 sm:pb-64 xl:pb-24 text-center'>
+            <h2 className="text-3xl text-black font-bold tracking-tight sm:text-4xl sm:text-white">
+              <span className="block">Schedule a time to participate</span>
+              <span className="block">and make your voice heard.</span>
             </h2>
             <Scheduler />
           </div>
-</div>
+        </div>
+
+
+    {/* END */}
+    <footer>
+      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+        <div className="mt-8 md:order-1 md:mt-0">
+          <p className="text-center text-base text-gray-400">&copy; 2022 Food Signel, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 </div>
   )
 }
