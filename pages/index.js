@@ -17,7 +17,7 @@ const Scheduler = () => {
           </div>
 
               {/* SCHEDULER */}
-              <InlineWidget url="https://calendly.com/food-signel/30min"/>
+              <InlineWidget url="https://calendly.com/food-signel/food-allergy-app-research-extended"/>
         </div>
     </div>
   );
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
 
         <div className="relative">
-        <h2 className="text-center text-lg font-semibold text-yellow-700 mb-3">October 3rd - 11th Event</h2>
+        <h2 className="text-center text-lg font-semibold text-yellow-700 mb-3">October 12th - 17th Event</h2>
           <h2 className="text-center text-4xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
             Volunteers Needed! 
           </h2>
