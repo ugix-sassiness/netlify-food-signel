@@ -2,6 +2,7 @@ import {
   ChatBubbleBottomCenterTextIcon,
 } from '@heroicons/react/24/outline'
 import { InlineWidget } from 'react-calendly'
+import Head from 'next/head'
 
 const Scheduler = () => {
   return (
@@ -50,7 +51,12 @@ const transferFeatures = [
 
 export default function Home() {
   return (
-    <div className="overflow-hidden bg-gray-50 py-16 lg:py-24">
+    <div>
+            <Head>
+              <title>Food Allergy App User Research</title>
+              <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
+            <div className="overflow-hidden bg-gray-50 py-16 lg:py-24">
       <div className="relative mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className='circle absolute left-full hidden -translate-x-1/2 -translate-y-1/4 transform lg:block'>
           <img
@@ -106,49 +112,52 @@ export default function Home() {
 
     {/* START */}
 
- {/* Stats section */}
- <div className="relative bg-gray-50 sm:bg-stone-800">
-          <div className="absolute inset-x-0 bottom-0 h-80 xl:top-0 xl:h-full">
-            <div className="h-full w-full xl:grid xl:grid-cols-2">
-              
-              <div className='circle absolute right-full hidden translate-x-full translate-y-12 transform lg:block'>
-                
-                  <img
-                    src="https://s3.us-east-2.amazonaws.com/dexter.io/woman-eating-sandwich.webp"
-                    alt=""
-                    className='h-full w-full object-left object-cover'
-                  />
+      {/* Stats section */}
+      <div className="relative bg-gray-50 sm:bg-stone-800">
+                <div className="absolute inset-x-0 bottom-0 h-80 xl:top-0 xl:h-full">
+                  <div className="h-full w-full xl:grid xl:grid-cols-2">
+                    
+                    <div className='circle absolute right-full hidden translate-x-full translate-y-12 transform lg:block'>
+                      
+                        <img
+                          src="https://s3.us-east-2.amazonaws.com/dexter.io/woman-eating-sandwich.webp"
+                          alt=""
+                          className='h-full w-full object-left object-cover'
+                        />
+                    </div>
+                    
+                    <div className="h-screen xl:relative xl:col-start-2">
+                      <img
+                        className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+                        src="https://s3.us-east-2.amazonaws.com/dexter.io/interview-food-illustrations.webp"
+                        alt="Food App User Research"
+                      />
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-flow-col-dense xl:grid-cols-2 xl:gap-x-8"> */}
+                {/* <div className='pt-12 pb-64 sm:pt-24 sm:pb-64 xl:pb-24 text-center'> */}
+                <div className='pt-12 sm:pt-24 sm:pb-64 xl:pb-24 text-center'>
+                  <h2 className="text-3xl text-black font-bold tracking-tight sm:text-4xl sm:text-white">
+                    <span className="block">Schedule a time to participate</span>
+                    <span className="block">and make your voice heard.</span>
+                  </h2>
+                  <Scheduler />
+                </div>
               </div>
-              
-              <div className="h-screen xl:relative xl:col-start-2">
-                <img
-                  className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                  src="https://s3.us-east-2.amazonaws.com/dexter.io/interview-food-illustrations.webp"
-                  alt="Food App User Research"
-                />
+
+
+          {/* END */}
+          <footer>
+            <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+              <div className="mt-8 md:order-1 md:mt-0">
+                <p className="text-center text-base text-gray-400">&copy; 2022 Food Signel, Inc. All rights reserved.</p>
               </div>
             </div>
-          </div>
-          {/* <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-flow-col-dense xl:grid-cols-2 xl:gap-x-8"> */}
-          {/* <div className='pt-12 pb-64 sm:pt-24 sm:pb-64 xl:pb-24 text-center'> */}
-          <div className='pt-12 sm:pt-24 sm:pb-64 xl:pb-24 text-center'>
-            <h2 className="text-3xl text-black font-bold tracking-tight sm:text-4xl sm:text-white">
-              <span className="block">Schedule a time to participate</span>
-              <span className="block">and make your voice heard.</span>
-            </h2>
-            <Scheduler />
-          </div>
-        </div>
-
-
-    {/* END */}
-    <footer>
-      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-base text-gray-400">&copy; 2022 Food Signel, Inc. All rights reserved.</p>
-        </div>
+          </footer>
       </div>
-    </footer>
-</div>
+
+    </div>
+    
   )
 }
